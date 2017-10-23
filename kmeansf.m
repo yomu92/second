@@ -36,7 +36,7 @@ W=sigmaf(W,sigma);
 if m<4
     [Z,Z1]=SpektKlaster(W, k, m);
 else
-    [Z,Z1]=ModularKlaster(W, k, m);
+    [Z,Z1]=ModularKlaster(W, k, m-3);
 end
 else
 Z1=kmeans(X',k,'Replicates',150);
